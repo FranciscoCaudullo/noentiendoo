@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/categories.css" />
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+		<title>Nucba Zappi</title>
+		<script src="https://kit.fontawesome.com/cb93d80cbc.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
+			<div class="logoContainer">
+				<img src="assets/nucbazappiicon.png" alt="nucba zappi icono" />
+			</div>
+			<nav>
+				<div class="burguerContainer" id="burguerMenu">
+					<span>
+						<i class="fa-solid fa-bars fa-2x"></i>
+					</span>
+				</div>
+				<ul id="navbarMenu">
+					<li>
+						<a href="#">
+							<div class="homeContainer">
+								<img src="assets/home.png" alt="icono de inicio" />
+								<p>Home</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a>
+							<div class="cartContainer">
+								<div class="productsCounterIcon" id="productsCounterIcon"></div>
+								<img id="cart_nav_icon" src="assets/cart_1.png" alt="icono de carrito" />
+								<div class="wheelsContainer">
+									<img src="assets/profile_1.png" alt="rueda de carrito" />
+									<img src="assets/profile_1.png" alt="rueda de carrito" />
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a>
+							<div class="profileContainer">
+								<img src="assets/profile_1.png" alt="" />
+								<img src="assets/profile_2.png" alt="" /></div
+						></a>
+					</li>
+				</ul>
+				<div class="overlay"></div>
+				<div class="cart-menu-grid-container" id="cart_menu_container">
+					<div class="close-button-container">
+						<button class="close-button" id="closeButton">x</button>
+					</div>
+					
+					<h2 class="cart-title">Tus productos</h2>
+
+					<div id="items-cart-container" class="items-cart-container"></div>
+
+					<div class="container-precios">
+						<span class="subtotal-span">Subtotal:</span>
+						<span class="envio-span">Envío:</span>
+						<span class="precio-span-subtotal">$4.890</span>
+						<span class="precio-span-envio">Gratis</span>
+						<button class="deleteAllMsj" id="deleteAllMsJ">Eliminar todos</button>
+						<hr class="hr" />
+					</div>
+					<span class="total-span">Total: </span>
+					<span class="total-span-precio">$4.890</span>
+
+					<button class="button-buy">Comprar</button>
+					<span class="verMas-text">Ver más productos</span>
+				</div>
+			</nav>
+		</header>
+		<div class="containerBody">
+			<main>
+				<section class="appHero">
+					<!-- Hero -->
+					<div class="presentation">
+						<div class="presentationContent">
+							<div class="titles">
+								<h2 class="bigTitle">Si tenes Zappi,</h2>
+								<h2 class="smallTitle">tenes Nucba.</h2>
+							</div>
+							<p class="subText">Buscá lo que quieras y nucba te quedas sin comida.</p>
+							<button class="showMore">VER MÁS</button>
+						</div>
+						<img src="/assets/img/hero/pizzaHero.png" alt="imagen pizza" srcset="" class="pizzaHero" />
+					</div>
+					<h3 class="recommendAppTitle">Hoy te recomendamos</h3>
+					<section id="recommendedApp" class="recommendedApp"></section>
+				</section>
+				<section class="appCategory">
+					<div class="categoriasContainer">
+						<h2>Categorias</h2>
+						<div class="categorias">
+							<div class="popular category active" data-type="popular">
+								<div class="iconCategory" data-type="popular">
+									<img src="assets/img/categories/pizzaicon.png" alt="Popular" data-type="popular" /><img
+										class="blur"
+										src="assets/img/categories/pizzaicon.png"
+										alt="Popular"
+									/>
+								</div>
+								<div class="textCategory" data-type="popular">
+									<h3 data-type="popular">Populares</h3>
+									<div class="lineDecoration"></div>
+								</div>
+							</div>
+							<div class="pizzas category" data-type="pizza">
+								<div class="iconCategory pizza">
+									<img src="assets/img/categories/pizzas.png" alt="Pizzas" data-type="pizza" /><img
+										class="blur"
+										src="assets/img/categories/pizzas.png"
+										alt="Pizzas"
+									/>
+								</div>
+								<div class="textCategory">
+									<h3 data-type="pizza">Pizzas</h3>
+									<div class="lineDecoration"></div>
+								</div>
+							</div>
+							<div class="hamburguer category" data-type="hamburguesa">
+								<div class="iconCategory">
+									<img src="assets/img/categories/burger.png" alt="Hamburguesas" data-type="hamburguesa" />
+									<img class="blur" src="assets/img/categories/burger.png" alt="Hamburguesa" />
+								</div>
+								<div class="textCategory">
+									<h3 data-type="hamburguesa">Hamburguesas</h3>
+									<div class="lineDecoration"></div>
+								</div>
+							</div>
+							<div class="fries category" data-type="papas">
+								<div class="iconCategory">
+									<img src="assets/img/categories/fries.png" alt="Papas fritas" data-type="papas" /><img
+										class="blur"
+										src="assets/img/categories/fries.png"
+										alt="Papas fritas"
+									/>
+								</div>
+								<div class="textCategory" data-type="papas">
+									<h3>Napapuki</h3>
+									<div class="lineDecoration"></div>
+								</div>
+							</div>
+							<div class="wrap category" data-type="wrap">
+								<div class="iconCategory">
+									<img src="assets/img/categories/wraps.png" alt="Wraps" data-type="wrap" /><img
+										class="blur"
+										src="assets/img/categories/wraps.png"
+										alt="Wraps"
+									/>
+								</div>
+								<div class="textCategory" data-type="wrap">
+									<h3>Wraps</h3>
+									<div class="lineDecoration"></div>
+								</div>
+							</div>
+							<div class="mexican category" data-type="mexicana">
+								<div class="iconCategory">
+									<img src="assets/img/categories/taco.png" alt="Comida Mexicana" data-type="mexicana" /><img
+										class="blur"
+										src="assets/img/categories/taco.png"
+										alt="Comida Mexicana"
+									/>
+								</div>
+								<div class="textCategory" data-type="mexicana">
+									<h3>Mexican Food</h3>
+									<div class="lineDecoration"></div>
+								</div>
+							</div>
+							<div class="shake category" data-type="batido">
+								<div class="iconCategory">
+									<img src="assets/img/categories/shake.png" alt="Shakes" data-type="batido" /><img
+										class="blur"
+										src="assets/img/categories/shake.png"
+										alt="Shakes"
+									/>
+								</div>
+								<div class="textCategory" data-type="batido">
+									<h3>Batidos</h3>
+									<div class="lineDecoration"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="appFiltered">
+					<div class="filteredTitleContainer">
+						<h2 class="filteredTitle">Los más populares</h2>
+					</div>
+					<div class="cardContainer" id="mostPopularContainer"></div>
+					<button id="showMoreButton" class="showMoreButton">Mostrar más</button>
+					<button id="showLess" class="showMoreButton disabled">Mostrar menos</button>
+				</section>
+			</main>
+		</div>
+		<footer class="footer">
+			<div class="footerTerms">
+				<a href="#">Términos de Uso</a>
+				<a href="#">Trabaja con Nosotros</a>
+				<a href="#">Soporte</a>
+			</div>
+			<div class="footerCopy">
+				<span>Hecho con ❤ en <span class="strong">NUCBAZAPPI</span></span>
+			</div>
+		</footer>
+		<div class="decorationBackground"></div>
+		<script src="/scripts/const.js"></script>
+		<script src="/scripts/index.js"></script>
+	</body>
+</html>
